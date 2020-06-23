@@ -31,7 +31,7 @@ const PostCreate = () => {
   const createPost = async (event) => {
     event.preventDefault()
     const res = await axios.post(
-      'http://localhost:4000/posts',
+      'http://posts.com/posts',
       { title: content },
       { headers: { 'content-type': 'application/json' } }
     )
