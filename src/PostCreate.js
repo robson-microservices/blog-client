@@ -31,7 +31,7 @@ const PostCreate = () => {
   const createPost = async (event) => {
     event.preventDefault()
     const res = await axios.post(
-      'http://posts.com/posts',
+      'http://posts.com/posts/create',
       { title: content },
       { headers: { 'content-type': 'application/json' } }
     )
